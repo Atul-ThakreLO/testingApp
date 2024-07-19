@@ -1,0 +1,7 @@
+.left-svg {
+    transform: translateX(-70px);
+}
+
+.right-svg {
+    transform: scale(-1,1) translateX(-70px);
+}

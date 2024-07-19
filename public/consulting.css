@@ -1,0 +1,136 @@
+.contain-text-1 {
+  opacity: 0.5;
+  transform: scale(0.5) translate(-500px);
+  animation: contain-text-1 0.3s 2.5s forwards;
+}
+
+@keyframes contain-text-1 {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.5) translate(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(0px);
+  }
+}
+.contain-text {
+  opacity: 0;
+  transform: translate(-300px);
+}
+
+.contain-text.anime {
+  animation: animeText 0.5s forwards;
+}
+
+@keyframes animeText {
+  0% {
+    opacity: 0;
+    transform: translate(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+.consulting {
+  position: relative;
+  /* padding-top: 50px !important; */
+  /* mix-blend-mode: difference; */
+}
+
+#consultingHeading {
+  text-shadow: 1px 1px 2px #a3d043, 2px 2px 2px #a3d043, 3px 3px 2px #a3d043,
+    4px 4px 2px #a3d043, 5px 5px 2px #a3d043;
+  opacity: 0;
+  animation: animateCon forwards;
+  animation-timeline: view();
+  animation-range: entry 50% cover 70%;
+  color: black !important;
+}
+
+@keyframes animateCon {
+  10% {
+    opacity: 0;
+    transform: translate(-200px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px) scale(1);
+  }
+}
+
+#arrow {
+  box-sizing: border-box;
+  display: block;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+  max-width: 100%;
+}
+
+.col {
+  perspective: 1000px;
+}
+
+.animate {
+  animation: animate;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+@keyframes animate {
+  10% {
+    opacity: 0;
+    transform: translate(50px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px) scale(1);
+  }
+}
+
+.counsulting-card {
+  border: 1px solid rgb(183, 183, 183);
+  border-radius: 0.4rem;
+  transition-duration: 0.5s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  flex: 1 1 auto;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
+}
+
+.counsulting-card .icon-up-color {
+  color: #5974c6 !important;
+}
+
+.counsulting-card:hover {
+  background-color: #5974c6;
+  transform-style: preserve-3d;
+  transform: rotateX(5deg) rotateY(5deg);
+  box-shadow: 0px 0px 5px 10px #27292310;
+  color: white;
+}
+
+.counsulting-card:hover i,
+.counsulting-card:hover p {
+  color: black !important;
+}
+
+#wrapper:hover .counsulting-card:not(:hover) {
+  box-shadow: 0px 0px 5px 5px #a5ce4b2b;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
